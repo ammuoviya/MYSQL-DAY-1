@@ -1,0 +1,58 @@
+Create a new table:
+CREATE TABLE `movies`.`movies` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(150) NOT NULL , `genre` INT(50) NOT NULL , `release_date`
+DATE NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;
+
+
+Insert data into table:
+INSERT INTO `umovie` (`id`, `name`, `genre`, `release_date`) VALUES ('', 'Ponniyin Selvan 2(PS2)', 'Fantasy, Drama, Comedy, Action', '2022-10-22');
+. 
+
+UPDATE DATA IN TABLE: 
+UPDATE umovie SET id = 2
+WHERE name="Tron Man 2";
+
+Delete Data from table:
+DELETE
+FROM umovie
+WHERE name="Tron Man 2";
+
+/**
+   HELPS TO INSERT A DATA
+*/
+INSERT INTO `movies` (`id`, `movie_name`, `movie_languages`, `movie_genre`, `cast_crew`, `director`, `production_company`, `release_date`, `music_director`) VALUES ('1', 'Ponniyin Selvan 1', 'Tamil, English, Hindi, Malayalam, Gujarati, Marathi, Kannada, Telugu, Chinese, Japanese ', 'Fantasy, Drama, Comedy, Action', 'Ravi, Karthik, Vikram, Ishwarya Rai, Trisha, Sarathkumar, Prabhu, Parthiban, Prakash Raj, Kishore, Jeyaram', 'Manirathnam', 'LYCA Productions', '2022-09-30', 'AR Rahman');
+
+
+/**
+   HELPS TO UPDATE A MOVIE
+*/
+UPDATE `movies` SET `movie_genre` = 'Fantasy, Love, Action, Comedy' WHERE `movies`.`id` = 2;
+
+
+
+
+/**
+EXAMPLE FOR ALIAS IN SQL
+*/
+
+
+GET DATA WITH ALIAS:
+
+
+
+/**
+EXAMPLE FOR ALIAS IN SQL
+*/
+SELECT rating as Ratings, review as Comments, user_id as Customer_id FROM `reviews` WHERE 1;
+
+
+DELETE DATA FROM TABLE
+/**
+HELPS TO DELETE A DATA
+*/
+
+
+DELETE
+FROM umovie
+WHERE name="Tron Man 2";
+
+
